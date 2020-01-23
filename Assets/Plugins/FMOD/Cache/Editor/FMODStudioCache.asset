@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114608133731009510}
-  - {fileID: 114236159597077086}
+  - {fileID: 114858739656355042}
   EditorEvents:
   - {fileID: 114256845552685388}
   - {fileID: 114620620045473738}
@@ -30,10 +30,10 @@ MonoBehaviour:
   - {fileID: 114050459995928826}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 114236159597077086}
+  - {fileID: 114858739656355042}
   StringsBanks:
   - {fileID: 114608133731009510}
-  stringsBankWriteTime: 637153456458363906
+  stringsBankWriteTime: 637153736451038438
   cacheVersion: 3
 --- !u!114 &114017399748031604
 MonoBehaviour:
@@ -50,7 +50,7 @@ MonoBehaviour:
   Path: event:/Grab
   guid: 6b963aa6597e654186605d56da109970
   Banks:
-  - {fileID: 114236159597077086}
+  - {fileID: 114858739656355042}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -91,7 +91,7 @@ MonoBehaviour:
   Path: event:/DoorOpen
   guid: 1f35f418016fc7458f7f245bb6210739
   Banks:
-  - {fileID: 114236159597077086}
+  - {fileID: 114858739656355042}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -114,7 +114,7 @@ MonoBehaviour:
   Path: event:/background_air_vent_fan_loop_01
   guid: 2403b12ae494214c9b59c8d6bfa74d05
   Banks:
-  - {fileID: 114236159597077086}
+  - {fileID: 114858739656355042}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   Path: event:/background
   guid: 8e01f865f40c8a448581cbdd281dcd29
   Banks:
-  - {fileID: 114236159597077086}
+  - {fileID: 114858739656355042}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -162,7 +162,7 @@ MonoBehaviour:
   lastModified: 637153456458303764
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &114256845552685388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
   Path: event:/Lever
   guid: 42c33585545caf41bcc0d2a5cab2f819
   Banks:
-  - {fileID: 114236159597077086}
+  - {fileID: 114858739656355042}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -201,7 +201,7 @@ MonoBehaviour:
   Path: event:/Switch
   guid: e17f224e6dd5d14f87e22b871761e7df
   Banks:
-  - {fileID: 114236159597077086}
+  - {fileID: 114858739656355042}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -224,7 +224,7 @@ MonoBehaviour:
   Path: event:/Scanned
   guid: 8ef856c325341b45b57643a34c42ea27
   Banks:
-  - {fileID: 114236159597077086}
+  - {fileID: 114858739656355042}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD_Intensifv2/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637153456458363906
+  lastModified: 637153736451038438
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -285,7 +285,7 @@ MonoBehaviour:
   Path: event:/ResetSwitch
   guid: 5072646da7632c4ea381d21f4ccaba8b
   Banks:
-  - {fileID: 114236159597077086}
+  - {fileID: 114858739656355042}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -308,7 +308,7 @@ MonoBehaviour:
   Path: event:/Sci-fi_spaceship_background_room_tone_hum_loop_01
   guid: ec29539e99016246988391cb4c4b3edc
   Banks:
-  - {fileID: 114236159597077086}
+  - {fileID: 114858739656355042}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -331,7 +331,7 @@ MonoBehaviour:
   Path: event:/background_room_tone_loop_01
   guid: c5a04faeefc7984eb56b5212bf4c40d2
   Banks:
-  - {fileID: 114236159597077086}
+  - {fileID: 114858739656355042}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -376,7 +376,7 @@ MonoBehaviour:
   Path: event:/VictorySwitch
   guid: cb132a43e7a59b4482df99a8c513d059
   Banks:
-  - {fileID: 114236159597077086}
+  - {fileID: 114858739656355042}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -384,6 +384,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1500
+--- !u!114 &114858739656355042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_Intensifv2/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637153736451028427
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &114859578022419476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -399,7 +417,7 @@ MonoBehaviour:
   Path: event:/poc
   guid: 8569b784b0a29042a3ff502eb409c95d
   Banks:
-  - {fileID: 114236159597077086}
+  - {fileID: 114858739656355042}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
