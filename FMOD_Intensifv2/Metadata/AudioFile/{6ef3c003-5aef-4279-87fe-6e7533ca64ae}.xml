@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{6ef3c003-5aef-4279-87fe-6e7533ca64ae}">
+		<property name="assetPath">
+			<value>switch_button_push_on_off_13.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.19375000000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c91a0b6e-3e72-46e8-bac3-d6cd96438ee7}</destination>
+		</relationship>
+	</object>
+</objects>

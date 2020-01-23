@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{75f47e24-8651-470f-a282-a9f31fa680e1}">
+		<property name="assetPath">
+			<value>sci-fi_spaceship_background_room_tone_hum_loop_01.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>11.173645833333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c91a0b6e-3e72-46e8-bac3-d6cd96438ee7}</destination>
+		</relationship>
+	</object>
+</objects>

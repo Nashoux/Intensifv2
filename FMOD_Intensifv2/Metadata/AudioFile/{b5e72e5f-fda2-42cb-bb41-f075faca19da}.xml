@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{b5e72e5f-fda2-42cb-bb41-f075faca19da}">
+		<property name="assetPath">
+			<value>door_metal_draw_slide_close_02.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.4090833333333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c91a0b6e-3e72-46e8-bac3-d6cd96438ee7}</destination>
+		</relationship>
+	</object>
+</objects>

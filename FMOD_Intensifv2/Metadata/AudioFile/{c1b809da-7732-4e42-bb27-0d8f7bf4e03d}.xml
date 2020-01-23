@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{c1b809da-7732-4e42-bb27-0d8f7bf4e03d}">
+		<property name="assetPath">
+			<value>sci-fi_scan_target_01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.45085416666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c91a0b6e-3e72-46e8-bac3-d6cd96438ee7}</destination>
+		</relationship>
+	</object>
+</objects>
