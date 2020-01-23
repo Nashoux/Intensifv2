@@ -2204,6 +2204,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.008
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 74102d442610bfe43ac516e01edb9b0a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7a50b89f677d1834ea5fad4539952f06, type: 2}
     - target: {fileID: 2300002, guid: 74102d442610bfe43ac516e01edb9b0a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -4682,8 +4686,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546892332}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.3449999, y: 1.442, z: -0.74}
-  m_LocalScale: {x: 0.21872325, y: 0.29222825, z: 0.13572918}
+  m_LocalPosition: {x: 1.3449999, y: 1.442, z: -0.775}
+  m_LocalScale: {x: 0.21872325, y: 0.29222825, z: 0.16587463}
   m_Children: []
   m_Father: {fileID: 1857863523}
   m_RootOrder: 2
@@ -8622,6 +8626,7 @@ GameObject:
   - component: {fileID: 932142534}
   - component: {fileID: 932142533}
   - component: {fileID: 932142532}
+  - component: {fileID: 932142538}
   m_Layer: 0
   m_Name: LevierPrincipal (1)
   m_TagString: Lever
@@ -8773,6 +8778,29 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!114 &932142538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932142528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/CollisionMetal
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &947518815
 GameObject:
   m_ObjectHideFlags: 0
@@ -15748,6 +15776,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 282dda220033b7c48a6897897cc78227, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: 282dda220033b7c48a6897897cc78227, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2300002, guid: 282dda220033b7c48a6897897cc78227, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -15787,12 +15823,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isOpening: 0
   door: {fileID: 2116769391}
+  an: {fileID: 1821471836}
 --- !u!4 &1821471834 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 282dda220033b7c48a6897897cc78227,
     type: 3}
   m_PrefabInstance: {fileID: 1821471830}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1821471835 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100010, guid: 282dda220033b7c48a6897897cc78227,
+    type: 3}
+  m_PrefabInstance: {fileID: 1821471830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1821471836
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821471835}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7e40e2d3fd05b874aa1c3b38c8c9e786, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1857863522
 GameObject:
   m_ObjectHideFlags: 0
@@ -16420,6 +16482,7 @@ GameObject:
   - component: {fileID: 1996314292}
   - component: {fileID: 1996314291}
   - component: {fileID: 1996314290}
+  - component: {fileID: 1996314296}
   m_Layer: 0
   m_Name: LevierPrincipal1 (1)
   m_TagString: Lever
@@ -16571,6 +16634,29 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!114 &1996314296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996314286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/CollisionMetal
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &2022894901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17368,6 +17454,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a84345888d64244ebb08a9461b1bf5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2817789191486470044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2817789191486470042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/CollisionPlastic
+  PlayEvent: 7
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &2817789191486470047 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2817789192861908584, guid: f03c48f39d3b74f4c9eba8586f370f06,

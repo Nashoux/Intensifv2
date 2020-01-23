@@ -9,9 +9,12 @@ public class ButtonRoom : MonoBehaviour, Activated
 
     [SerializeField] Door door;
 
+    FMOD.Studio.EventInstance pushSound;
+    public Animator an;
+
     void Start()
     {
-        
+        pushSound = FMODUnity.RuntimeManager.CreateInstance ("event:/DoorOpen");
     }
 
     public void Activate(GameObject origin){
@@ -26,8 +29,12 @@ public class ButtonRoom : MonoBehaviour, Activated
     
     private void OnTriggerEnter(Collider other) {
         if(other.transform.tag == "Hand"){
+            pushSound.start();
+            an.SetTrigger("Push");
+
             if(isOpening){
                 door.Activate(this.gameObject);
+                
             }else{
 
             }

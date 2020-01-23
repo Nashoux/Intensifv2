@@ -25,10 +25,16 @@ public class CompteurElectrque : LeverHolder , Activated
     public Material unactiv_Mat;
     bool alreadyActiv = false;
 
+    FMOD.Studio.EventInstance openSound;
+    FMOD.Studio.EventInstance resetSound;
+    FMOD.Studio.EventInstance fusibleSound;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        openSound = FMODUnity.RuntimeManager.CreateInstance ("event:/VictorySwitch");
+        resetSound = FMODUnity.RuntimeManager.CreateInstance ("event:/ResetSwitch");
+        fusibleSound = FMODUnity.RuntimeManager.CreateInstance ("event:/AddFusible"); 
     }
 
     // Update is called once per frame
@@ -43,6 +49,7 @@ public class CompteurElectrque : LeverHolder , Activated
         if(isActive && !alreadyActiv){
             alreadyActiv = true;
             activLight.material = activ_Mat;
+            fusibleSound.start();
         }
     }
 
@@ -72,11 +79,21 @@ public class CompteurElectrque : LeverHolder , Activated
     }
 
     void winThis(){
-        boxSoluce.transform.Rotate(new Vector3(-64.659f,0,0));
+        StartCoroutine(openWin());
         handleToGet.SetActive(true);
+        openSound.start();
     }
 
-    void ResetCompteur(){        
+    IEnumerator openWin(){
+        for(int i = 0; i < 30; i ++){
+            boxSoluce.transform.Rotate(new Vector3(-64.659f/30,0,0));
+            yield return new WaitForEndOfFrame();
+        }
+        yield return null;
+    }
+
+    void ResetCompteur(){     
+        resetSound.start();   
         for(int i = 0; i < mySwitchsNormal.Length; i ++){
             mySwitchsNormal[i].GetComponent<Animator>().SetBool("Active", false);
             mySwitchsNormal[i].GetComponent<Collider>().enabled = true;

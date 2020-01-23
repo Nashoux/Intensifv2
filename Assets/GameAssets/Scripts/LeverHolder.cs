@@ -19,6 +19,12 @@ public class LeverHolder : MonoBehaviour
     public int nbToAdd = 1;
     public bool isActive = false;
 
+    FMOD.Studio.EventInstance addLeverSound;
+    void Start()
+    {
+        addLeverSound = FMODUnity.RuntimeManager.CreateInstance ("event:/AddLever");
+    }
+
 
     void OnTriggerEnter(Collider other) {
         if(other.tag == tagObj && other.GetComponent<OVRGrabbable>().isGrabbed == true){
@@ -40,6 +46,7 @@ public class LeverHolder : MonoBehaviour
             other.tag = "Untagged";
             handlesToAdd[nbLever].SetActive(true);
             nbLever ++;
+            addLeverSound.start();
             if(nbLever >= nbToAdd && isDestroyedAfter){
                 isActive = true;
                 grabableHandler.SetActive(true);
