@@ -39,10 +39,14 @@ public class LeverHolder : MonoBehaviour
         if(other.tag == tagObj && lastEnteredLever != null && other.GetComponent<OVRGrabbable>().isGrabbed == false){
             other.GetComponent<OVRGrabbable>().enabled = false;
             other.GetComponent<Rigidbody>().isKinematic = true;
-            other.GetComponent<Collider>().enabled = false;
-            other.gameObject.SetActive(false);
-            SnapToPos mySnap = other.gameObject.AddComponent<SnapToPos>();
-            mySnap.snapToThis = pos;
+            //other.GetComponent<Collider>().enabled = false;
+            //other.gameObject.SetActive(false);
+            other.transform.position = new Vector3(-100,0,0);
+            if(other.GetComponent<ResetPositionIfOut>()){
+                other.GetComponent<ResetPositionIfOut>().enabled = false;
+            }
+            //SnapToPos mySnap = other.gameObject.AddComponent<SnapToPos>();
+            //mySnap.snapToThis = pos;
             other.tag = "Untagged";
             handlesToAdd[nbLever].SetActive(true);
             nbLever ++;

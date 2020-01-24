@@ -14,7 +14,7 @@ public class FollowPhysic : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void FixedUpdate() {
+    private void Update() {
         rb.MovePosition(target.position);
     }
 
