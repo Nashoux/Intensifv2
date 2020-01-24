@@ -12,6 +12,12 @@ ModelImporter:
     100012: transform1
     100014: transform2
     100016: transform3
+    100018: Button_03
+    100020: polySurface3
+    100022: polySurface4
+    100024: transform4
+    100026: transform5
+    100028: transform6
     400000: Button_01
     400002: //RootNode
     400004: Button_02
@@ -21,14 +27,27 @@ ModelImporter:
     400012: transform1
     400014: transform2
     400016: transform3
+    400018: Button_03
+    400020: polySurface3
+    400022: polySurface4
+    400024: transform4
+    400026: transform5
+    400028: transform6
     2100000: Button_Case_Mat
     2100002: Button_Mat
+    2100004: standardSurface1
     2300000: Button_02
     2300002: polySurface2
+    2300004: polySurface3
+    2300006: polySurface4
     3300000: Button_02
     3300002: polySurface2
+    3300004: polySurface3
+    3300006: polySurface4
     4300000: Button_02
     4300002: polySurface2
+    4300004: polySurface3
+    4300006: polySurface4
   externalObjects: {}
   materials:
     importMaterials: 1
