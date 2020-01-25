@@ -9,6 +9,9 @@ public class PuzzleManagefloor : MonoBehaviour, Activated
     public string[] nameOrder;
 
     public float[] orientation;
+
+    [SerializeField] Door doorOpen;
+    [SerializeField] BoutonPannel pannelToActiv;
     
     FMOD.Studio.EventInstance pushSound;
 
@@ -20,6 +23,8 @@ public class PuzzleManagefloor : MonoBehaviour, Activated
     public void Activate(GameObject origin){
         if(isItWin()){
             pushSound.start();
+            pannelToActiv.isActive = true;
+            doorOpen.Activate(this.gameObject);
         }
     }
 

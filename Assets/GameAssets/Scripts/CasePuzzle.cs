@@ -44,7 +44,14 @@ public Transform pos;
                 nbLever ++;
                 addLeverSound.start();
                 other.transform.position = transform.position;
-                oriantationMyObject = other.transform.rotation.eulerAngles.y - (other.transform.rotation.eulerAngles.y%90 );
+
+                if(other.transform.rotation.eulerAngles.y%90<45){
+                    oriantationMyObject = other.transform.rotation.eulerAngles.y - (other.transform.rotation.eulerAngles.y%90 );
+                }
+                else{
+                    oriantationMyObject = other.transform.rotation.eulerAngles.y + 90 - (other.transform.rotation.eulerAngles.y%90 );
+                }
+
                 other.transform.rotation = Quaternion.Euler( new Vector3(0,oriantationMyObject,0) );
                 
                 myObject = other.GetComponent<OVRGrabbable>();
