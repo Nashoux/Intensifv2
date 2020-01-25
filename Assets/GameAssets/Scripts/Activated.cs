@@ -8,6 +8,5 @@ public interface Activated
 
      void Activate(GameObject origin);
 
-    
 
 }

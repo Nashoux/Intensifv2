@@ -8,6 +8,8 @@ public Transform pos;
 
     GameObject lastEnteredLever;
 
+    public PuzzleManagefloor puzzleManagerfloor;
+
 
     public string tagObj = "Lever";
     int nbLever = 0;
@@ -16,6 +18,8 @@ public Transform pos;
     public bool isActive = false;
 
     public OVRGrabbable myObject;
+
+    public float oriantationMyObject;
 
     FMOD.Studio.EventInstance addLeverSound;
     void Start()
@@ -40,12 +44,15 @@ public Transform pos;
                 nbLever ++;
                 addLeverSound.start();
                 other.transform.position = transform.position;
-                other.transform.rotation = Quaternion.Euler( new Vector3(0,other.transform.rotation.eulerAngles.y - (other.transform.rotation.eulerAngles.y%90 ),0) );
+                oriantationMyObject = other.transform.rotation.eulerAngles.y - (other.transform.rotation.eulerAngles.y%90 );
+                other.transform.rotation = Quaternion.Euler( new Vector3(0,oriantationMyObject,0) );
+                
                 myObject = other.GetComponent<OVRGrabbable>();
-            }           
+                puzzleManagerfloor.Activate(this.gameObject);
+            }
             
         }
-        if(other.gameObject == myObject.gameObject){
+        if(myObject != null && other.gameObject == myObject.gameObject){
             if(myObject.isGrabbed){
                 myObject = null;
                 nbLever --;

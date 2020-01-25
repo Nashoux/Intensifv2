@@ -17,11 +17,13 @@ permissions and limitations under the License.
 using System;
 using UnityEngine;
 
+
 /// <summary>
 /// An object that can be grabbed and thrown by OVRGrabber.
 /// </summary>
 public class OVRGrabbable : MonoBehaviour
 {
+
     [SerializeField]
     protected bool m_allowOffhandGrab = true;
     [SerializeField]
@@ -36,6 +38,8 @@ public class OVRGrabbable : MonoBehaviour
     protected bool m_grabbedKinematic = false;
     protected Collider m_grabbedCollider = null;
     protected OVRGrabber m_grabbedBy = null;
+
+    
 
 	/// <summary>
 	/// If true, the object can currently be grabbed.

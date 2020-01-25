@@ -8,6 +8,8 @@ public class CardHolder : MonoBehaviour
     public string cardName = "Card1";
     [SerializeField] Renderer myRender;
 
+    [SerializeField] Material activ_mat;
+
     [SerializeField] ButtonRoom button;
     FMOD.Studio.EventInstance scanSound;
 
@@ -18,7 +20,7 @@ public class CardHolder : MonoBehaviour
 
     void OnTriggerEnter(Collider other) {
         if(other.tag == cardName && !statutUpdated){
-            myRender.material.color = new Color(0.2f,0.8f,0.3f,1f);
+            myRender.material = activ_mat;
             statutUpdated = true;
             scanSound.start();
             button.Activate(this.gameObject);
