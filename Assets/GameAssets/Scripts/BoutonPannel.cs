@@ -34,8 +34,8 @@ public class BoutonPannel : MonoBehaviour,Activated
     // Start is called before the first frame update
     void Start()
     {
-        winSound = FMODUnity.RuntimeManager.CreateInstance ("event:/VictorySwitch");
-        resetSound = FMODUnity.RuntimeManager.CreateInstance ("event:/ResetSwitch");
+        winSound = FMODUnity.RuntimeManager.CreateInstance ("event:/LeverEnd");
+        resetSound = FMODUnity.RuntimeManager.CreateInstance ("event:/ResetBouton");
         fusibleSound = FMODUnity.RuntimeManager.CreateInstance ("event:/AddFusible"); 
     }
 

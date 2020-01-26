@@ -22,10 +22,13 @@ public Transform pos;
     public float oriantationMyObject;
 
     FMOD.Studio.EventInstance addLeverSound;
+    
+    public string eventname = "AddLever";
+
     void Start()
     {
         myObject = null;
-        addLeverSound = FMODUnity.RuntimeManager.CreateInstance ("event:/AddLever");
+        addLeverSound = FMODUnity.RuntimeManager.CreateInstance ("event:/"+eventname);
     }
 
 
