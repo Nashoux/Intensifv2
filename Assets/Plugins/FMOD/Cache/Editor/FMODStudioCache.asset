@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114608133731009510}
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   EditorEvents:
   - {fileID: 114620620045473738}
   - {fileID: 114017399748031604}
@@ -49,10 +49,10 @@ MonoBehaviour:
   - {fileID: 114106067544495928}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   StringsBanks:
   - {fileID: 114608133731009510}
-  stringsBankWriteTime: 637156388918393390
+  stringsBankWriteTime: 637156356950818411
   cacheVersion: 3
 --- !u!114 &114000203462949602
 MonoBehaviour:
@@ -87,7 +87,7 @@ MonoBehaviour:
   Path: event:/taser_stun_gun_zap_electricity_04
   guid: 4a50cd2d38162347b5567a7ae9bb6693
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -110,7 +110,7 @@ MonoBehaviour:
   Path: event:/Grab
   guid: 6b963aa6597e654186605d56da109970
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -151,7 +151,7 @@ MonoBehaviour:
   Path: event:/explosion
   guid: df7236ee0ccddf4b9b3839a3bdd11843
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -192,7 +192,7 @@ MonoBehaviour:
   Path: event:/DoorOpen
   guid: 1f35f418016fc7458f7f245bb6210739
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -215,7 +215,7 @@ MonoBehaviour:
   Path: event:/AddFusible
   guid: d85c466f19d1064d89b78b3b3954e6a7
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -238,7 +238,7 @@ MonoBehaviour:
   Path: event:/LeverEnd
   guid: 42c33585545caf41bcc0d2a5cab2f819
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -261,7 +261,7 @@ MonoBehaviour:
   Path: event:/PushButton
   guid: 0184fc7956361a42a88c51e1b6c44074
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -284,7 +284,7 @@ MonoBehaviour:
   Path: event:/background_air_vent_fan_loop_01
   guid: 2403b12ae494214c9b59c8d6bfa74d05
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -307,7 +307,7 @@ MonoBehaviour:
   Path: event:/boutton
   guid: eca96dc78f7ae542b303200488c749ef
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -330,7 +330,7 @@ MonoBehaviour:
   Path: event:/background
   guid: 8e01f865f40c8a448581cbdd281dcd29
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -389,7 +389,7 @@ MonoBehaviour:
   Path: event:/Rien
   guid: 28899e7f09cb6a4bb479d19a99ef26ce
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -470,7 +470,7 @@ MonoBehaviour:
   Path: event:/Switch
   guid: e17f224e6dd5d14f87e22b871761e7df
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -493,7 +493,7 @@ MonoBehaviour:
   Path: event:/metal1
   guid: 9252c2a2f7404a4e8cc289c616657310
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -516,7 +516,7 @@ MonoBehaviour:
   Path: event:/metal1 3
   guid: 91b2c32c5226874696d1d6e2fed708b1
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -539,7 +539,7 @@ MonoBehaviour:
   Path: event:/Scanned
   guid: 8ef856c325341b45b57643a34c42ea27
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -580,7 +580,7 @@ MonoBehaviour:
   Path: event:/Light
   guid: 573b3c98410cf346b2aa74afc552a89b
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -625,7 +625,7 @@ MonoBehaviour:
   Path: event:/AddLever
   guid: f37a10fa172d764b9960f1063b3317d5
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -666,7 +666,7 @@ MonoBehaviour:
   Path: event:/taser_stun_gun_zap_electricity_03
   guid: 53db4447f94c3147a11f33583697174f
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -689,7 +689,7 @@ MonoBehaviour:
   Path: event:/metal1 2
   guid: 21dca187e4589247b443c0b2d3941014
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -712,7 +712,7 @@ MonoBehaviour:
   Path: event:/ResetBouton
   guid: 6a4176feb7e7cd448e4a23368e5b8e29
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -752,7 +752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD_Intensifv2/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637156388918393390
+  lastModified: 637156356950818411
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -773,7 +773,7 @@ MonoBehaviour:
   Path: event:/ResetSwitch
   guid: 5072646da7632c4ea381d21f4ccaba8b
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -796,7 +796,7 @@ MonoBehaviour:
   Path: event:/Sci-fi_spaceship_background_room_tone_hum_loop_01
   guid: ec29539e99016246988391cb4c4b3edc
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -819,7 +819,7 @@ MonoBehaviour:
   Path: event:/CollisionMetal
   guid: 30177fa8d4aa7d4293af6704a74a1d80
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -842,7 +842,7 @@ MonoBehaviour:
   Path: event:/background_room_tone_loop_01
   guid: c5a04faeefc7984eb56b5212bf4c40d2
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -887,7 +887,7 @@ MonoBehaviour:
   Path: event:/SonElectric
   guid: e676f29364ce7149b65b8b2f03b8597c
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -910,7 +910,7 @@ MonoBehaviour:
   Path: event:/boutonRandom
   guid: e4d24f7b1fae8a4593025487bd82c83a
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -933,7 +933,7 @@ MonoBehaviour:
   Path: event:/SonViolent
   guid: d550c7aaabcc474a99a9d00e1467bd98
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -956,7 +956,7 @@ MonoBehaviour:
   Path: event:/VictorySwitch
   guid: cb132a43e7a59b4482df99a8c513d059
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1015,7 +1015,7 @@ MonoBehaviour:
   Path: event:/PiecePuzzle
   guid: dd4207ee36ca9f4abaec3dcced78e240
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1045,6 +1045,24 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &114868821353272652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_Intensifv2/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637156356950527973
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &114928587464015230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1060,7 +1078,7 @@ MonoBehaviour:
   Path: event:/CollisionPlastic
   guid: 142a57bf5037274b860e5a034cb535db
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1101,7 +1119,7 @@ MonoBehaviour:
   Path: event:/PowerStart
   guid: 0c800c3c91709745a9954cf6f09454a5
   Banks:
-  - {fileID: 114000203462949602}
+  - {fileID: 114868821353272652}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1

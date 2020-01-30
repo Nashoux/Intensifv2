@@ -80,6 +80,7 @@ public class BoutonPannel : MonoBehaviour,Activated
     }
 
     void winThis(){
+        myLightWin.material = activ_Mat;
         openDoor.Activate(this.gameObject);
         winSound.start();
     }

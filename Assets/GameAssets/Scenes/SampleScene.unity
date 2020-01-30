@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 5567056}
   - component: {fileID: 5567055}
   - component: {fileID: 5567059}
+  - component: {fileID: 5567060}
   m_Layer: 0
   m_Name: Bouton1 (1)
   m_TagString: Untagged
@@ -174,7 +175,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5567053}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7278958, y: 0.5, z: 1.2108827}
@@ -240,6 +241,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 1
+--- !u!114 &5567060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5567053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &10169165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2807,31 +2831,13 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 62262888}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &62262890 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1809973792182016856, guid: ca8955d9e30ae2444b250151e37b653c,
-    type: 3}
-  m_PrefabInstance: {fileID: 62262888}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &62262891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 62262890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16c27cc0a1ee86c4284bd3482a2a4e04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &62262892 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2116769391, guid: ca8955d9e30ae2444b250151e37b653c,
     type: 3}
   m_PrefabInstance: {fileID: 62262888}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 62262890}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16c27cc0a1ee86c4284bd3482a2a4e04, type: 3}
@@ -3280,31 +3286,13 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 88660281}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &88660283 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1809973792182016856, guid: ca8955d9e30ae2444b250151e37b653c,
-    type: 3}
-  m_PrefabInstance: {fileID: 88660281}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &88660284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 88660283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16c27cc0a1ee86c4284bd3482a2a4e04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &88660285 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2116769391, guid: ca8955d9e30ae2444b250151e37b653c,
     type: 3}
   m_PrefabInstance: {fileID: 88660281}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 88660283}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16c27cc0a1ee86c4284bd3482a2a4e04, type: 3}
@@ -5544,7 +5532,7 @@ PrefabInstance:
     - target: {fileID: 1809973792182016856, guid: ca8955d9e30ae2444b250151e37b653c,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 1809973792182016868, guid: ca8955d9e30ae2444b250151e37b653c,
         type: 3}
@@ -5664,31 +5652,13 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 253792771}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &253792773 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1809973792182016856, guid: ca8955d9e30ae2444b250151e37b653c,
-    type: 3}
-  m_PrefabInstance: {fileID: 253792771}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &253792774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 253792773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16c27cc0a1ee86c4284bd3482a2a4e04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &253792776 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2116769391, guid: ca8955d9e30ae2444b250151e37b653c,
     type: 3}
   m_PrefabInstance: {fileID: 253792771}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 253792773}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16c27cc0a1ee86c4284bd3482a2a4e04, type: 3}
@@ -5908,6 +5878,7 @@ GameObject:
   - component: {fileID: 272450937}
   - component: {fileID: 272450936}
   - component: {fileID: 272450940}
+  - component: {fileID: 272450941}
   m_Layer: 0
   m_Name: Bouton11 (1)
   m_TagString: Untagged
@@ -5956,7 +5927,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272450934}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7278958, y: 0.5, z: 1.2108827}
@@ -6022,6 +5993,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 11
+--- !u!114 &272450941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272450934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &277110171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6825,6 +6819,7 @@ GameObject:
   - component: {fileID: 385814249}
   - component: {fileID: 385814248}
   - component: {fileID: 385814252}
+  - component: {fileID: 385814253}
   m_Layer: 0
   m_Name: BoutonCarre6 (1)
   m_TagString: Untagged
@@ -6873,7 +6868,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385814246}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.87782955, y: 0.5, z: 0.87782955}
@@ -6939,6 +6934,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 18
+--- !u!114 &385814253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385814246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &398424694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7046,6 +7064,7 @@ GameObject:
   - component: {fileID: 404091830}
   - component: {fileID: 404091829}
   - component: {fileID: 404091833}
+  - component: {fileID: 404091834}
   m_Layer: 0
   m_Name: Bouton (1)
   m_TagString: Untagged
@@ -7094,7 +7113,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404091827}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7278958, y: 0.5, z: 1.2108827}
@@ -7160,6 +7179,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 0
+--- !u!114 &404091834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404091827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &424576005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8288,6 +8330,7 @@ GameObject:
   - component: {fileID: 503173055}
   - component: {fileID: 503173054}
   - component: {fileID: 503173058}
+  - component: {fileID: 503173059}
   m_Layer: 0
   m_Name: BoutonCarre5 (1)
   m_TagString: Untagged
@@ -8336,7 +8379,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 503173052}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.87782955, y: 0.5, z: 0.87782955}
@@ -8402,6 +8445,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 17
+--- !u!114 &503173059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503173052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &513818752
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8938,6 +9004,7 @@ GameObject:
   - component: {fileID: 534403316}
   - component: {fileID: 534403315}
   - component: {fileID: 534403319}
+  - component: {fileID: 534403320}
   m_Layer: 0
   m_Name: BoutonCarre2 (1)
   m_TagString: Untagged
@@ -8986,7 +9053,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534403313}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.87782955, y: 0.5, z: 0.87782955}
@@ -9052,6 +9119,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 14
+--- !u!114 &534403320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534403313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &542265666 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100006, guid: 74102d442610bfe43ac516e01edb9b0a,
@@ -11264,7 +11354,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654849387}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7278958, y: 0.5, z: 1.2108827}
@@ -13994,6 +14084,7 @@ GameObject:
   - component: {fileID: 789128709}
   - component: {fileID: 789128708}
   - component: {fileID: 789128712}
+  - component: {fileID: 789128713}
   m_Layer: 0
   m_Name: BoutonCarre (1)
   m_TagString: Untagged
@@ -14042,7 +14133,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789128706}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.87782955, y: 0.5, z: 0.87782955}
@@ -14108,6 +14199,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 12
+--- !u!114 &789128713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789128706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &790401189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14343,6 +14457,7 @@ GameObject:
   - component: {fileID: 792585764}
   - component: {fileID: 792585763}
   - component: {fileID: 792585767}
+  - component: {fileID: 792585768}
   m_Layer: 0
   m_Name: Bouton5 (1)
   m_TagString: Untagged
@@ -14391,7 +14506,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792585761}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7278958, y: 0.5, z: 1.2108827}
@@ -14457,6 +14572,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 5
+--- !u!114 &792585768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792585761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &798167681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14588,6 +14726,7 @@ GameObject:
   - component: {fileID: 798748535}
   - component: {fileID: 798748534}
   - component: {fileID: 798748538}
+  - component: {fileID: 798748539}
   m_Layer: 0
   m_Name: Bouton8 (1)
   m_TagString: Untagged
@@ -14636,7 +14775,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798748532}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7278958, y: 0.5, z: 1.2108827}
@@ -14702,6 +14841,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 8
+--- !u!114 &798748539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798748532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &802272671 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 802272671, guid: ce816f2e6abb0504092c23ed9b970dfd,
@@ -15080,6 +15242,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8ac4662276a3e8445953fd11cfa2d156, type: 2}
+    - target: {fileID: 2300000, guid: af697eded4a8a294fb89d503dc0f7b02, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af697eded4a8a294fb89d503dc0f7b02, type: 3}
 --- !u!4 &816374183 stripped
@@ -15189,6 +15355,7 @@ GameObject:
   - component: {fileID: 824097058}
   - component: {fileID: 824097057}
   - component: {fileID: 824097061}
+  - component: {fileID: 824097062}
   m_Layer: 0
   m_Name: Bouton9 (1)
   m_TagString: Untagged
@@ -15237,7 +15404,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824097055}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7278958, y: 0.5, z: 1.2108827}
@@ -15303,6 +15470,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 9
+--- !u!114 &824097062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824097055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &828984246
 GameObject:
   m_ObjectHideFlags: 0
@@ -16802,6 +16992,7 @@ GameObject:
   - component: {fileID: 851266880}
   - component: {fileID: 851266879}
   - component: {fileID: 851266883}
+  - component: {fileID: 851266884}
   m_Layer: 0
   m_Name: Bouton7 (1)
   m_TagString: Untagged
@@ -16850,7 +17041,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851266877}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7278958, y: 0.5, z: 1.2108827}
@@ -16916,6 +17107,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 7
+--- !u!114 &851266884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851266877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &854216716
 GameObject:
   m_ObjectHideFlags: 0
@@ -18499,7 +18713,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932142528}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -19752,6 +19966,7 @@ GameObject:
   - component: {fileID: 1128418901}
   - component: {fileID: 1128418900}
   - component: {fileID: 1128418904}
+  - component: {fileID: 1128418905}
   m_Layer: 0
   m_Name: BoutonCarre4 (1)
   m_TagString: Untagged
@@ -19800,7 +20015,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1128418898}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.87782955, y: 0.5, z: 0.87782955}
@@ -19866,6 +20081,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 16
+--- !u!114 &1128418905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128418898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1129501388
 GameObject:
   m_ObjectHideFlags: 0
@@ -19880,6 +20118,7 @@ GameObject:
   - component: {fileID: 1129501391}
   - component: {fileID: 1129501390}
   - component: {fileID: 1129501394}
+  - component: {fileID: 1129501395}
   m_Layer: 0
   m_Name: BoutonCarre8 (1)
   m_TagString: Untagged
@@ -19928,7 +20167,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1129501388}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.87782955, y: 0.5, z: 0.87782955}
@@ -19994,6 +20233,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 20
+--- !u!114 &1129501395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129501388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1131245036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20293,6 +20555,7 @@ GameObject:
   - component: {fileID: 1157429129}
   - component: {fileID: 1157429128}
   - component: {fileID: 1157429132}
+  - component: {fileID: 1157429133}
   m_Layer: 0
   m_Name: BoutonCarre3 (1)
   m_TagString: Untagged
@@ -20341,7 +20604,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157429126}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.87782955, y: 0.5, z: 0.87782955}
@@ -20407,6 +20670,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 15
+--- !u!114 &1157429133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157429126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!114 &1163441621 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6095581686889946644, guid: 0348aaecb8130c843962de827058097c,
@@ -23722,6 +24008,70 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1452605951}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1452901099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1452901101}
+  - component: {fileID: 1452901100}
+  m_Layer: 0
+  m_Name: Reflection Probe (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!215 &1452901100
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452901099}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 10, y: 10, z: 10}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!4 &1452901101
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452901099}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.8005247, y: 1.6041889, z: 5.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 56
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1460497405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24202,6 +24552,7 @@ GameObject:
   - component: {fileID: 1497892282}
   - component: {fileID: 1497892281}
   - component: {fileID: 1497892285}
+  - component: {fileID: 1497892286}
   m_Layer: 0
   m_Name: BoutonRond1 (1)
   m_TagString: Untagged
@@ -24250,7 +24601,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497892279}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.56742924, y: 0.5, z: 0.56742924}
@@ -24316,6 +24667,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 22
+--- !u!114 &1497892286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497892279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1499034006
 GameObject:
   m_ObjectHideFlags: 0
@@ -24330,6 +24704,7 @@ GameObject:
   - component: {fileID: 1499034009}
   - component: {fileID: 1499034008}
   - component: {fileID: 1499034012}
+  - component: {fileID: 1499034013}
   m_Layer: 0
   m_Name: BoutonRond2 (1)
   m_TagString: Untagged
@@ -24378,7 +24753,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499034006}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.56742924, y: 0.5, z: 0.56742924}
@@ -24444,6 +24819,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 23
+--- !u!114 &1499034013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499034006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1503833267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24558,6 +24956,7 @@ GameObject:
   - component: {fileID: 1513018523}
   - component: {fileID: 1513018522}
   - component: {fileID: 1513018526}
+  - component: {fileID: 1513018527}
   m_Layer: 0
   m_Name: Bouton4 (1)
   m_TagString: Untagged
@@ -24606,7 +25005,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513018520}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7278958, y: 0.5, z: 1.2108827}
@@ -24672,6 +25071,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 4
+--- !u!114 &1513018527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513018520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1513473282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100008, guid: 74102d442610bfe43ac516e01edb9b0a,
@@ -25123,6 +25545,7 @@ GameObject:
   - component: {fileID: 1533396850}
   - component: {fileID: 1533396849}
   - component: {fileID: 1533396853}
+  - component: {fileID: 1533396854}
   m_Layer: 0
   m_Name: BoutonRond3 (1)
   m_TagString: Untagged
@@ -25171,7 +25594,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1533396847}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.56742924, y: 0.5, z: 0.56742924}
@@ -25237,6 +25660,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 24
+--- !u!114 &1533396854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533396847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1538103988
 GameObject:
   m_ObjectHideFlags: 0
@@ -25251,6 +25697,7 @@ GameObject:
   - component: {fileID: 1538103991}
   - component: {fileID: 1538103990}
   - component: {fileID: 1538103994}
+  - component: {fileID: 1538103995}
   m_Layer: 0
   m_Name: Bouton10 (1)
   m_TagString: Untagged
@@ -25299,7 +25746,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538103988}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7278958, y: 0.5, z: 1.2108827}
@@ -25365,6 +25812,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 10
+--- !u!114 &1538103995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538103988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1557678117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26030,6 +26500,7 @@ GameObject:
   - component: {fileID: 1633858316}
   - component: {fileID: 1633858315}
   - component: {fileID: 1633858319}
+  - component: {fileID: 1633858320}
   m_Layer: 0
   m_Name: Bouton3 (1)
   m_TagString: Untagged
@@ -26078,7 +26549,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633858313}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7278958, y: 0.5, z: 1.2108827}
@@ -26144,6 +26615,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 3
+--- !u!114 &1633858320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633858313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1637029769
 GameObject:
   m_ObjectHideFlags: 0
@@ -27494,6 +27988,7 @@ GameObject:
   - component: {fileID: 1769068930}
   - component: {fileID: 1769068929}
   - component: {fileID: 1769068933}
+  - component: {fileID: 1769068934}
   m_Layer: 0
   m_Name: BoutonRond (1)
   m_TagString: Untagged
@@ -27542,7 +28037,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769068927}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.56742924, y: 0.5, z: 0.56742924}
@@ -27608,6 +28103,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 21
+--- !u!114 &1769068934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769068927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1776699075
 GameObject:
   m_ObjectHideFlags: 0
@@ -27622,6 +28140,7 @@ GameObject:
   - component: {fileID: 1776699078}
   - component: {fileID: 1776699077}
   - component: {fileID: 1776699081}
+  - component: {fileID: 1776699082}
   m_Layer: 0
   m_Name: BoutonCarre7 (1)
   m_TagString: Untagged
@@ -27670,7 +28189,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776699075}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.87782955, y: 0.5, z: 0.87782955}
@@ -27736,6 +28255,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 19
+--- !u!114 &1776699082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776699075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1777367924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28940,6 +29482,7 @@ GameObject:
   - component: {fileID: 1905053839}
   - component: {fileID: 1905053838}
   - component: {fileID: 1905053842}
+  - component: {fileID: 1905053843}
   m_Layer: 0
   m_Name: BoutonCarre1 (1)
   m_TagString: Untagged
@@ -28988,7 +29531,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905053836}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.87782955, y: 0.5, z: 0.87782955}
@@ -29054,6 +29597,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 13
+--- !u!114 &1905053843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905053836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1917034467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29792,7 +30358,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996314286}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -30901,6 +31467,7 @@ GameObject:
   - component: {fileID: 2134079614}
   - component: {fileID: 2134079613}
   - component: {fileID: 2134079617}
+  - component: {fileID: 2134079618}
   m_Layer: 0
   m_Name: Bouton6 (1)
   m_TagString: Untagged
@@ -30949,7 +31516,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134079611}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.7278958, y: 0.5, z: 1.2108827}
@@ -31015,6 +31582,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 6
+--- !u!114 &2134079618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134079611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2140867501 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1705714407413551153, guid: db33dfa36a726c946b7a18af97106081,
@@ -32590,7 +33180,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6487350407646092513}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.9864665, y: 0.76, z: 0.4569933}
@@ -32630,6 +33220,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 26
+--- !u!114 &6487350407646092520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487350407646092513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6487350407646092527 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8722247245041918861, guid: 7c8e737f2d828144cb2350a76d599260,
@@ -32644,7 +33257,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6487350407646092527}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.9864665, y: 0.76, z: 0.4569933}
@@ -32684,6 +33297,29 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   animator: {fileID: 0}
   numSwitch: 25
+--- !u!114 &6487350407646092534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487350407646092527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: Hand
+  Event: event:/boutonRandom
+  PlayEvent: 3
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &6487350407646183553 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8722247245042155491, guid: 7c8e737f2d828144cb2350a76d599260,
